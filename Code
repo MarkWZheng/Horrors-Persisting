@@ -1,0 +1,27 @@
+list_arr = []
+size = 3
+def generator(list):
+    for x in range(0, 2):
+        for y in range(0, 3):
+            for z in range(0, 3):
+                for w in range(0, 3):
+                    curr_arr = [x, y, z, w]
+                    list.append(curr_arr)
+    return list
+list_arr = generator(list_arr)
+
+print(list_arr)
+
+# def b(arrays1, arrays2, size):
+#     results_modded = []
+#     for array1 in arrays1:
+#         for array2 in arrays2:
+#             if (((array1[0] + array1[1] + array1[2] + array1[3])!= 0) & ((array2[0] + array2[1] + array2[2] + array2[3]))):
+#                 result = array1[0]*array2[1]+array1[1]*array2[0]+array1[2]*array2[3]+array1[3]*array2[2]
+#                 if (result % 3 == 0):
+#                     results_modded.append([array1, array2])
+#     return results_modded
+
+# b_points = b(list_arr, list_arr, 3)
+
+# print(b_points)
