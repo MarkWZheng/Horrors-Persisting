@@ -25,3 +25,20 @@ print(list_arr)
 # b_points = b(list_arr, list_arr, 3)
 
 # print(b_points)
+
+def delete_dupes(arrays):
+    new_arr = []
+    for array in arrays:
+        two_check = False
+        for i in range(0, 4):
+            if (two_check == False):
+                if (array[i] == 1):
+                    new_arr.append(array)
+                    two_check = True
+                elif (array[i] == 2):
+                    two_check = True
+    return new_arr
+
+list_arr = delete_dupes(list_arr)
+            
+print(list_arr)
